@@ -1,0 +1,25 @@
+Regulatory/Compliance Overview
+
+1) Data Privacy and Security:
+The platform must comply with data privacy regulations such as the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States. This includes obtaining user consent for data collection and ensuring the security of personal information stored on the platform.
+
+2) Intellectual Property Rights:
+The platform must respect intellectual property rights when using content such as maps, images, and reviews from third-party sources. Proper attribution and permissions must be obtained to avoid copyright infringement issues.
+
+3) Advertising Standards:
+When entering into advertising partnerships with local businesses and travel agencies, the platform must adhere to advertising standards and guidelines set by regulatory bodies to ensure transparency and accuracy in advertising content.
+
+4) Affiliate Marketing Compliance:
+The platform must comply with regulations related to affiliate marketing, including disclosing affiliate relationships with booking platforms and tour operators to users. Clear disclosures must be provided to avoid misleading users.
+
+5) Accessibility Compliance:
+The platform must ensure accessibility compliance to cater to users with disabilities. This includes providing alternative text for images, keyboard navigation options, and other features to make the platform accessible to all users.
+
+6) Payment Processing Compliance:
+If the platform offers in-app purchases or subscription fees, it must comply with payment processing regulations to ensure secure transactions and protect user financial information.
+
+7) Content Moderation:
+The platform must implement content moderation policies to monitor user-generated content and ensure that it complies with community guidelines and regulations. This includes removing inappropriate or offensive content and addressing user complaints or feedback promptly.
+
+8) Anti-Money Laundering (AML) and Know Your Customer (KYC) Compliance:
+If the platform facilitates financial transactions or bookings, it must comply with AML and KYC regulations to prevent money laundering and verify the identity of users. This includes implementing identity verification processes and monitoring transactions for suspicious activities.

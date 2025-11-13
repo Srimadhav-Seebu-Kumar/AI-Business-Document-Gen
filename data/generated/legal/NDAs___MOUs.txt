@@ -1,0 +1,66 @@
+Non-Disclosure Agreement (NDA)
+
+This Non-Disclosure Agreement (the "Agreement") is entered into on this [Date] by and between [Company Name], a company organized and existing under the laws of [State/Country], with its principal place of business at [Address] ("Disclosing Party"), and [Recipient Name], a company organized and existing under the laws of [State/Country], with its principal place of business at [Address] ("Receiving Party").
+
+1. Purpose
+The parties wish to explore a potential business relationship (the "Purpose") in which the Disclosing Party may disclose certain confidential and proprietary information to the Receiving Party.
+
+2. Confidential Information
+"Confidential Information" means any information disclosed by the Disclosing Party to the Receiving Party, whether orally or in writing, that is designated as confidential or that reasonably should be understood to be confidential given the nature of the information and the circumstances of disclosure.
+
+3. Non-Disclosure
+The Receiving Party agrees not to disclose or use any Confidential Information for any purpose other than the Purpose, without the prior written consent of the Disclosing Party. The Receiving Party shall take all reasonable measures to protect the confidentiality of the Confidential Information.
+
+4. Term
+This Agreement shall remain in effect for a period of [Number] years from the date of this Agreement.
+
+5. Governing Law
+This Agreement shall be governed by and construed in accordance with the laws of [State/Country].
+
+IN WITNESS WHEREOF, the parties hereto have executed this Agreement as of the date first above written.
+
+[Company Name]
+
+By: _______________________
+Name: _____________________
+Title: ______________________
+
+[Recipient Name]
+
+By: _______________________
+Name: _____________________
+Title: ______________________
+
+---
+
+Memorandum of Understanding (MOU)
+
+This Memorandum of Understanding (the "MOU") is entered into on this [Date] by and between [Company Name], a company organized and existing under the laws of [State/Country], with its principal place of business at [Address] ("Party A"), and [Company Name], a company organized and existing under the laws of [State/Country], with its principal place of business at [Address] ("Party B").
+
+1. Purpose
+The parties wish to establish a strategic partnership to collaborate on the development and promotion of a travel platform (the "Platform") as described in the attached Business Concept.
+
+2. Responsibilities
+- Party A shall be responsible for providing detailed travel guides and maps for various cities and destinations worldwide.
+- Party B shall be responsible for developing and maintaining the website and mobile app for the Platform.
+- Both parties shall work together to integrate booking platforms and other features to enhance the user experience.
+
+3. Term
+This MOU shall remain in effect for a period of [Number] years from the date of this Agreement.
+
+4. Governing Law
+This MOU shall be governed by and construed in accordance with the laws of [State/Country].
+
+IN WITNESS WHEREOF, the parties hereto have executed this MOU as of the date first above written.
+
+[Company Name]
+
+By: _______________________
+Name: _____________________
+Title: ______________________
+
+[Company Name]
+
+By: _______________________
+Name: _____________________
+Title: ______________________

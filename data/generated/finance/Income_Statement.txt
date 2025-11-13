@@ -1,0 +1,18 @@
+Income Statement
+
+Revenue:
+Subscription fees for premium content and features: $50,000
+Advertising partnerships with local businesses and travel agencies: $20,000
+Affiliate marketing for booking platforms and tour operators: $15,000
+In-app purchases for exclusive travel guides and experiences: $10,000
+Total Revenue: $95,000
+
+Expenses:
+Database maintenance and updates: $10,000
+Partnership fees with local experts and businesses: $15,000
+Marketing and user engagement strategies: $20,000
+Technology and platform development: $25,000
+Operational costs: $10,000
+Total Expenses: $80,000
+
+Net Income: $15,000

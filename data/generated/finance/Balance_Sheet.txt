@@ -1,0 +1,29 @@
+**Balance Sheet**
+
+As of [Date]
+
+**Assets:**
+
+- Cash: $XXX
+- Accounts Receivable: $XXX
+- Inventory: $XXX
+- Prepaid Expenses: $XXX
+- Property, Plant, and Equipment: $XXX
+- Intangible Assets: $XXX
+- Total Assets: $XXX
+
+**Liabilities:**
+
+- Accounts Payable: $XXX
+- Accrued Expenses: $XXX
+- Short-term Loans: $XXX
+- Long-term Loans: $XXX
+- Total Liabilities: $XXX
+
+**Equity:**
+
+- Common Stock: $XXX
+- Retained Earnings: $XXX
+- Total Equity: $XXX
+
+**Total Liabilities and Equity: $XXX**

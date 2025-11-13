@@ -1,0 +1,30 @@
+Customer Journey Map
+
+1) Awareness:
+- Potential customers become aware of the platform through online advertisements, social media promotions, and word-of-mouth recommendations.
+- They are intrigued by the concept of personalized and up-to-date travel guides and maps for various destinations.
+
+2) Consideration:
+- Customers visit the platform's website or download the mobile app to explore its features and offerings.
+- They read reviews and testimonials from other users to gauge the platform's reliability and usefulness.
+- Customers compare the platform with other similar services to determine its unique value proposition.
+
+3) Decision:
+- Customers decide to sign up for a free account to access basic features and content on the platform.
+- They may upgrade to a premium subscription to unlock exclusive travel guides and personalized recommendations.
+- Customers may also make in-app purchases for additional content or experiences.
+
+4) Purchase:
+- Customers make bookings for accommodations, transportation, and activities through the platform's integrated booking platforms.
+- They may also click on advertisements or affiliate links to support the platform's revenue model.
+- Customers receive confirmation emails and notifications for their bookings and purchases.
+
+5) Experience:
+- Customers use the platform's detailed travel guides and interactive maps to plan their trips effectively.
+- They explore attractions, restaurants, and accommodations based on personalized recommendations and user reviews.
+- Customers share their experiences and feedback on the platform to help improve its offerings for future users.
+
+6) Loyalty:
+- Satisfied customers continue to use the platform for their future travel needs and recommend it to friends and family.
+- They may leave positive reviews and ratings on app stores and review websites to increase the platform's visibility.
+- Customers may also participate in loyalty programs or referral schemes to earn rewards for their continued support.

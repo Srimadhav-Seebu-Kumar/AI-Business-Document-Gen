@@ -1,0 +1,21 @@
+Customer Persona Sheets
+
+Persona 1: Sarah the Solo Traveler
+
+1) Name: Sarah
+2) Age: 28
+3) Occupation: Freelance writer
+4) Travel Preferences: Enjoys exploring off-the-beaten-path destinations and trying local cuisine
+5) Goals: To discover hidden gems and unique experiences during her solo travels
+6) Pain Points: Difficulty finding reliable and up-to-date travel information for lesser-known destinations
+7) How our platform can help: Provides personalized recommendations and insider tips for off-the-beaten-path destinations, helping Sarah plan her trips effectively and discover hidden gems.
+
+Persona 2: Mark and Emily the Family Travelers
+
+1) Names: Mark and Emily
+2) Ages: 35 and 32
+3) Occupations: Mark - IT consultant, Emily - Stay-at-home mom
+4) Travel Preferences: Family-friendly attractions and accommodations, easy transportation options
+5) Goals: To plan fun and memorable family vacations with their two young children
+6) Pain Points: Difficulty finding suitable accommodations and activities for their family trips
+7) How our platform can help: Offers detailed travel guides for family-friendly destinations, personalized recommendations for family activities, and user reviews for family-friendly accommodations, helping Mark and Emily plan their family vacations with ease.

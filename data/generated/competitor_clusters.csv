@@ -1,0 +1,8 @@
+Company,Description,Country,Website,Cluster,PCA1,PCA2
+Airbnb,Platform for booking unique stays and local experiences,USA,https://www.airbnb.com,2,0.42653642244125617,-0.5809849047225525
+TripAdvisor,Travel reviews and destination guides,USA,https://www.tripadvisor.com,4,-0.4610222158088567,0.020523664167010267
+Expedia,Online travel booking for flights hotels and packages,USA,https://www.expedia.com,0,0.2887419511817374,0.5137027564625254
+MakeMyTrip,Indian travel booking and holiday packages,India,https://www.makemytrip.com,0,0.12452820495329726,0.5833291292336761
+Goibibo,Online hotel and bus booking platform,India,https://www.goibibo.com,0,0.5478880277939381,-0.209897499180165
+Lonely Planet,Travel guide publisher and city explorer app,Australia,https://www.lonelyplanet.com,3,-0.4641556599980688,-0.1300566835641843
+Google Travel,AI powered travel planner with maps and itinerary suggestions,USA,https://www.google.com/travel,1,-0.46251673056330356,-0.19661646239630956

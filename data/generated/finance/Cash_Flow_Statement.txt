@@ -1,0 +1,22 @@
+**Cash Flow Statement**
+
+**Operating Activities:**
+- Revenue from subscription fees: $50,000
+- Revenue from advertising partnerships: $20,000
+- Revenue from affiliate marketing: $15,000
+- Revenue from in-app purchases: $10,000
+- Operating expenses (staff salaries, content creation, marketing): $60,000
+- Net cash provided by operating activities: $35,000
+
+**Investing Activities:**
+- Investment in technology and platform development: $25,000
+- Net cash used in investing activities: $25,000
+
+**Financing Activities:**
+- None
+
+**Net Increase in Cash:** $10,000
+
+**Beginning Cash Balance:** $20,000
+
+**Ending Cash Balance:** $30,000
