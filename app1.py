@@ -15,119 +15,39 @@ from intelligence.sentiment_tone import analyze_sentiment, rewrite_tone
 OUT = "data/generated"
 st.set_page_config(page_title="AI Startup Suite", layout="wide")
 
-# ---------------------------------------------------------------------------
-# PREMIUM SAAS UI STYLING
-# ---------------------------------------------------------------------------
 st.markdown("""
 <style>
-
-    /* Global Clean Font */
-    html, body, [class*="css"] {
-        font-family: 'Inter', sans-serif !important;
-    }
-
-    /* Main Title */
     .main-title {
-        font-size: 40px !important;
-        font-weight: 800 !important;
-        margin-bottom: 25px !important;
-        background: linear-gradient(90deg, #0052cc, #3f8cff);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    /* Section Title */
-    .section-title {
-        font-size: 24px !important;
+        font-size: 36px !important;
         font-weight: 700 !important;
-        margin-top: 40px !important;
-        color: #222 !important;
-        letter-spacing: -0.3px;
-        border-left: 5px solid #0052cc;
-        padding-left: 12px;
-        margin-bottom: 10px;
+        margin-bottom: 20px !important;
     }
-
-    /* Glass Card Preview Box */
+    .section-title {
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        color: #2e2e2e !important;
+        margin-top: 35px !important;
+    }
     .preview-box {
-        background: rgba(255, 255, 255, 0.75) !important;
-        backdrop-filter: blur(8px);
-        color: #222 !important;
-        border: 1px solid rgba(0,0,0,0.1) !important;
-        border-radius: 10px !important;
-        padding: 18px !important;
+        background-color: #f2f2f2 !important;
+        color: #000000 !important;
+        border: 1px solid #cccccc !important;
+        border-radius: 6px !important;
+        padding: 15px !important;
         height: 450px !important;
         overflow-y: auto !important;
         white-space: pre-wrap !important;
-        font-family: "Source Code Pro", monospace !important;
-        font-size: 14px !important;
-        line-height: 1.45;
-        transition: box-shadow 0.2s ease-in-out, border 0.2s;
+        font-family: "Courier New", monospace !important;
     }
-
-    .preview-box:hover {
-        border-color: #0052cc !important;
-        box-shadow: 0px 4px 18px rgba(0, 82, 204, 0.18);
-    }
-
-    /* Buttons → Premium Blue Styling */
-    .stButton>button {
-        border-radius: 8px !important;
-        border: none !important;
-        background: linear-gradient(90deg, #0052cc, #3f8cff) !important;
-        color: white !important;
-        padding: 10px 24px !important;
-        font-size: 15px !important;
-        font-weight: 600 !important;
-        transition: all 0.25s !important;
-    }
-
-    .stButton>button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0, 82, 204, 0.3);
-    }
-
-    /* Input Fields */
-    textarea, input, select {
-        border-radius: 8px !important;
-    }
-
-    /* Tabs Design */
-    .stTabs [role="tab"] {
-        padding: 10px 20px !important;
-        font-size: 16px !important;
-        font-weight: 600 !important;
-        color: #444 !important;
-        border-radius: 8px !important;
-        margin-right: 8px !important;
-        border: 1px solid #ddd !important;
-    }
-
-    .stTabs [role="tab"][aria-selected="true"] {
-        background: linear-gradient(90deg, #0052cc, #3f8cff) !important;
-        color: white !important;
-        border: none !important;
-    }
-
-    /* Tables */
-    .dataframe {
-        border-radius: 10px !important;
-        overflow: hidden !important;
-    }
-
 </style>
 """, unsafe_allow_html=True)
 
-# ---------------------------------------------------------------------------
-# HEADER
-# ---------------------------------------------------------------------------
 st.markdown('<div class="main-title">AI Startup Suite</div>', unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
-# INPUT IDEA
+# IDEA INPUT
 # ---------------------------------------------------------------------------
 st.subheader("Input Idea")
-
 idea = st.text_area(
     "Describe your startup concept",
     placeholder="e.g., Platform for local travel guides customized for each city.",
@@ -150,7 +70,7 @@ with colB:
         st.success("Audit complete.")
 
 # ---------------------------------------------------------------------------
-# DOCUMENT BROWSER
+# GENERATED DOCS BROWSER WITH LIVE PREVIEW
 # ---------------------------------------------------------------------------
 st.markdown('<div class="section-title">Generated Documents</div>', unsafe_allow_html=True)
 
@@ -163,7 +83,7 @@ if selected_doc and selected_doc != "-- Select --":
     st.markdown(f'<div class="preview-box">{content}</div>', unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
-# TABS
+# TABS FOR FEATURES
 # ---------------------------------------------------------------------------
 st.markdown('<div class="section-title">Tools & Analysis</div>', unsafe_allow_html=True)
 
@@ -174,7 +94,9 @@ tab1, tab2, tab3, tab4 = st.tabs([
     "Sentiment & Tone"
 ])
 
-# ------------------- TAB 1: SEMANTIC SEARCH -------------------
+# ---------------------------------------------------------------------------
+# TAB 1 — SEMANTIC SEARCH
+# ---------------------------------------------------------------------------
 with tab1:
     st.write("Search across all documents using vector embeddings.")
     q = st.text_input("Query", placeholder="e.g., What are my revenue risks?")
@@ -186,20 +108,27 @@ with tab1:
             st.markdown(f"**Source:** {r['path']} — Score {r['score']:.3f}")
             st.markdown(f'<div class="preview-box">{r["snippet"]}</div>', unsafe_allow_html=True)
 
-# ------------------- TAB 2: FINANCE PROJECTION -------------------
+# ---------------------------------------------------------------------------
+# TAB 2 — FINANCE PROJECTION
+# ---------------------------------------------------------------------------
 with tab2:
     if st.button("Simulate & Project Financials"):
         hist = simulate_revenue_monthly()
+
+        # CORRECTED ARG ORDER
         proj, burn, plot = fit_and_project(hist, out_dir=OUT)
 
-        st.metric("Estimated Monthly Burn", f"${burn:,.2f}", "K")
+        st.metric("Estimated Monthly Burn", f"${burn:,.2f}")
         st.line_chart(hist.set_index("month"))
         st.line_chart(proj.set_index("month"))
 
         if os.path.exists(plot):
             st.image(plot)
 
-# ------------------- TAB 3: COMPETITOR CLUSTERING -------------------
+
+# ---------------------------------------------------------------------------
+# TAB 3 — COMPETITOR CLUSTERING
+# ---------------------------------------------------------------------------
 with tab3:
     k = st.slider("Number of clusters", 2, 8, 3)
     if st.button("Cluster Competitors"):
@@ -208,7 +137,9 @@ with tab3:
         if plot and os.path.exists(plot):
             st.image(plot)
 
-# ------------------- TAB 4: SENTIMENT & TONE -------------------
+# ---------------------------------------------------------------------------
+# TAB 4 — SENTIMENT & TONE
+# ---------------------------------------------------------------------------
 with tab4:
     text = st.text_area("Paste marketing content")
     tone = st.selectbox("Rewrite tone", ["persuasive", "formal", "friendly", "authoritative"])
@@ -227,13 +158,13 @@ with tab4:
                 st.markdown(f'<div class="preview-box">{out}</div>', unsafe_allow_html=True)
 
 # ---------------------------------------------------------------------------
-# EXTRA TOOLS
+# EXTRA FEATURES ADDED
 # ---------------------------------------------------------------------------
 st.markdown('<div class="section-title">Additional Tools</div>', unsafe_allow_html=True)
 
 extra_col1, extra_col2 = st.columns(2)
 
-# ZIP DOWNLOAD
+# 🔍 NEW: Quick Doc Downloader
 with extra_col1:
     st.write("Download all generated documents as a ZIP for offline use.")
     if st.button("Build ZIP Package"):
@@ -243,7 +174,7 @@ with extra_col1:
         with open(zip_path, "rb") as f:
             st.download_button("Download ZIP", f, file_name="startup_documents.zip")
 
-# FILE STATS
+# 📊 NEW: Document Stats
 with extra_col2:
     st.write("Quick statistics for generated files")
     if files:

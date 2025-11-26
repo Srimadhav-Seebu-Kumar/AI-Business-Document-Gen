@@ -2,15 +2,46 @@ import glob, os
 from utils.openai_client import llm
 from utils.prompts import AUDIT_PROMPT
 
-def audit_all(folder="data/generated"):
-    files = glob.glob(os.path.join(folder, "**/*.txt"), recursive=True)
-    bundle = []
-    for p in files:
-        try:
-            txt = open(p, "r", encoding="utf-8").read()
-            name = os.path.relpath(p, folder)
-            bundle.append(f"# {name}\n{txt}\n")
-        except: pass
-    joined = "\n\n".join(bundle)
-    prompt = AUDIT_PROMPT.format(bundle=joined[:150000])  # keep prompt safe size
-    return llm([{"role":"user","content":prompt}])
+import os
+import glob
+from utils.openai_client import llm
+
+MAX_CHARS = 8000      # hard limit so we never exceed token window
+MAX_FILES = 5         # limit how many docs we audit
+
+def audit_all(folder):
+    files = sorted(
+        glob.glob(os.path.join(folder, "**/*.txt"), recursive=True),
+        key=os.path.getmtime,
+        reverse=True
+    )[:MAX_FILES]
+
+    combined = ""
+    total_len = 0
+
+    for f in files:
+        text = open(f, "r", encoding="utf-8").read()
+        if (total_len + len(text)) > MAX_CHARS:
+            break
+        combined += f"\n\n### FILE: {os.path.basename(f)}\n{text}"
+        total_len += len(text)
+
+    prompt = f"""
+You are an AI document auditor.
+
+Analyze the following documents for:
+- contradictions
+- missing info
+- repeated info
+- inconsistencies in terminology
+- gaps in logic
+- unclear assumptions
+
+Documents:
+{combined}
+
+Provide a structured audit summary.
+"""
+
+    return llm([{"role": "user", "content": prompt}])
+

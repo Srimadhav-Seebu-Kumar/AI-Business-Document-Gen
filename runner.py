@@ -17,7 +17,7 @@ def ensure_sample_competitors_csv(path="data/sample_competitors.csv"):
     """Create a default competitors CSV if it's missing or empty."""
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if not os.path.exists(path) or os.stat(path).st_size == 0:
-        print("[⚙️] No competitor file found. Creating a sample file...")
+        print("[] No competitor file found. Creating a sample file...")
         with open(path, "w", encoding="utf-8") as f:
             f.write(
                 "Company,Description,Country,Website\n"
